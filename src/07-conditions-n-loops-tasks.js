@@ -198,7 +198,7 @@ function isInsideCircle(circle, point) {
  */
 function findFirstSingleChar(str) {
   let arr = str.split('');
-  while (true) {
+  for (; ;) {
     if (arr.length === 0) return null;
     const firstSymbol = arr[0];
     arr.splice(0, 1);
